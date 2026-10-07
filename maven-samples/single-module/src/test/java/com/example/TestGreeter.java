@@ -21,15 +21,15 @@ public class TestGreeter {
   }
 
   @Test
-  public void intentionally_failed() {
-    assertTrue(failed);
-  }
-    
-  @Test
   public void greetShouldIncludeTheOneBeingGreeted() {
     String someone = "World";
 
     assertThat(greeter.greet(someone), containsString(someone));
+  }
+  
+  @Test
+  public void intentionally_failed() {
+    assertTrue(false);
   }
 
   @Test

@@ -21,6 +21,11 @@ public class TestGreeter {
   }
 
   @Test
+  public void ibtentionally_failed() {
+    assertTest(failed);
+  }
+    
+  @Test
   public void greetShouldIncludeTheOneBeingGreeted() {
     String someone = "World";
 

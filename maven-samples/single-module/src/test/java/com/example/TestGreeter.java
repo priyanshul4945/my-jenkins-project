@@ -21,8 +21,8 @@ public class TestGreeter {
   }
 
   @Test
-  public void ibtentionally_failed() {
-    assertTest(failed);
+  public void intentionally_failed() {
+    assertTrue(failed);
   }
     
   @Test
